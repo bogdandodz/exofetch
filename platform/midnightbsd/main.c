@@ -8,8 +8,9 @@ int main() {
 
   char* host_name = hostname();
   printf("%s\n", host_name);
+  free(host_name);
 
   char* kernel_ver = kernelver();
   printf ("%s\n", kernel_ver);
-  free(kernelver());  
+  free(kernel_ver);  
 }
