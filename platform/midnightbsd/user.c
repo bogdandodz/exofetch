@@ -1,4 +1,3 @@
-#include <asm-generic/param.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -17,7 +16,7 @@ char* username() {
 
 char* hostname() {
   void *host_name = malloc(MAXHOSTNAMELEN);
-  gethostname(host_name, sizeof(host_name));
+  gethostname(host_name, sizeof(MAXHOSTNAMELEN));
   
   return host_name;
 }
