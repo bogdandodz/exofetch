@@ -12,5 +12,8 @@ int main() {
 
   char* kernel_ver = kernelver();
   printf ("%s\n", kernel_ver);
-  free(kernel_ver);  
+  free(kernel_ver);
+
+  long up_time = uptime();
+  printf ("Uptime: %ld\n", up_time); 
 }
